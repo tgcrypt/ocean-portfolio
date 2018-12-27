@@ -69,7 +69,7 @@ if ( have_posts() ) :
 
 				$inner_classes 		= implode( ' ', $inner_classes ); ?>
 
-				<article id="post-<?php the_ID(); ?>" class="<?php echo esc_attr( $inner_classes ); ?>" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				<figure id="post-<?php the_ID(); ?>" class="<?php echo esc_attr( $inner_classes ); ?>" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 
 					<?php
 					$theme_file = get_stylesheet_directory() . '/templates/entry-portfolio.php';
@@ -86,7 +86,7 @@ if ( have_posts() ) :
 
 		        	include( $template_path ); ?>
 
-				</article>
+				</figure>
 
 				<?php
 				// Reset counter to clear floats

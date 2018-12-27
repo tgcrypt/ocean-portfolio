@@ -1,3 +1,8 @@
+= 1.1.6 =
+- Fixed: Wrong image displayed on the lightbox.
+- Fixed: Lightbox issue on portfolio taxonomy.
+- Fixed: Buttons after the footer on single portfolio items.
+
 = 1.1.5 =
 - Fixed: Issue with lightbox script on single portfolio items.
 

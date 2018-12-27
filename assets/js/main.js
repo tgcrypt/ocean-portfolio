@@ -156,7 +156,7 @@ function op_portfolioLightbox() {
         $pic.find( '.portfolio-lightbox' ).closest( 'figure' ).on( 'click', function( e ) {
             e.preventDefault();
             
-            var $index = $j( this ).index();
+            var $index = $pic.find( '.portfolio-lightbox' ).closest( 'figure' ).index( $j( this ) );
             var options = {
                 index: $index,
                 bgOpacity: 0.7,

@@ -3,11 +3,11 @@
  * Plugin Name:			Ocean Portfolio
  * Plugin URI:			https://oceanwp.org/extension/ocean-portfolio/
  * Description:			A complete extension to display your portfolio and work in a beautiful way.
- * Version:				1.1.5
+ * Version:				1.1.6
  * Author:				OceanWP
  * Author URI:			https://oceanwp.org/
  * Requires at least:	4.5.0
- * Tested up to:		5.0.0
+ * Tested up to:		5.0
  *
  * Text Domain: ocean-portfolio
  * Domain Path: /languages/
@@ -89,7 +89,7 @@ final class Ocean_Portfolio {
 		$this->token 			= 'ocean-portfolio';
 		$this->plugin_url 		= plugin_dir_url( __FILE__ );
 		$this->plugin_path 		= plugin_dir_path( __FILE__ );
-		$this->version 			= '1.1.5';
+		$this->version 			= '1.1.6';
 		$theme 					= wp_get_theme();
 
 		define( 'OP_URL', $this->plugin_url );
@@ -753,8 +753,7 @@ final class Ocean_Portfolio {
 
 		// Return if not portfolio pages
 		if ( ! is_page_template( 'portfolio-template.php' )
-			&& ! op_portfolio_taxonomy()
-			&& ! is_singular( 'ocean_portfolio' ) ) {
+			&& ! op_portfolio_taxonomy() ) {
 			return;
 		}
 
